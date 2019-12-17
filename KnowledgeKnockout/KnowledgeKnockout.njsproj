@@ -10,7 +10,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=KK_User
 DB_PASS=KK_Pwd
-DB_NAME=KK_DBName
+DB_NAME=KK_DB
 DB_SessionStoreName=KK_DBSessionStore
 SESSION_SECRET=eaO1LJRfcOZEiXMs</Environment>
   </PropertyGroup>
@@ -38,6 +38,8 @@ SESSION_SECRET=eaO1LJRfcOZEiXMs</Environment>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="routes\add_question_route.ts" />
+    <Content Include="views\add_question.html" />
     <Content Include="views\demo_socket.io.html">
       <SubType>Code</SubType>
     </Content>

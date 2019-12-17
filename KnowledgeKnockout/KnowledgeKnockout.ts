@@ -51,4 +51,7 @@ app.get('/', index_route_get);
 
 app.get('/example', example_route_get).post('/example', example_route_post);
 
+// add questions and answers to database
+app.post('/add-question', add_question_route_post);
+
 app.get('*', any_route_get);
