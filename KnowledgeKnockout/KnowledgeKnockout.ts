@@ -6,11 +6,13 @@ import { MySQL } from './mysql/MySql';
 import { any_route_get } from './routes/any_route';
 import { example_route_get, example_route_post } from './routes/example_route';
 import { index_route_get } from './routes/index_route';
+import { add_question_route_post, add_question_route_get } from './routes/add_question_route';
 import { SocketConnection } from './socket_connection/SocketConnection';
 
 const app = express();
 
 const server = app.listen(80);
+
 
 SocketConnection.initialize(server);
 
@@ -51,7 +53,10 @@ app.get('/', index_route_get);
 
 app.get('/example', example_route_get).post('/example', example_route_post);
 
-// add questions and answers to database
+// post questions and answers to database
 app.post('/add-question', add_question_route_post);
+
+// show add_question page
+app.get('/add-question', (req, res) => { res.sendFile(__dirname + '/views/add_question.html') });
 
 app.get('*', any_route_get);
