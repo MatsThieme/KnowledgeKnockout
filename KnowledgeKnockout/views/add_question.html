@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+﻿<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Fragen hochladen</title>
@@ -21,6 +21,7 @@
         </style>
     </head>
     <body>
+        
         <form id="questionUploadForm">
             <textarea id="questionContent"></textarea>
 
@@ -98,7 +99,7 @@
                             alert('Fehler beim Versand');
                         } else {
                             // kein fehler
-                            location.reload();
+                            console.log(this.responseText);
                         }
                     };
 
