@@ -7,11 +7,11 @@ class SocketConnection {
         SocketConnection.sockets = new Map();
         SocketConnection.io.on('connection', socket => {
             SocketConnection.sockets.set(SocketConnection.getSessionCookie(socket), socket);
-            console.log(SocketConnection.getSessionCookie(socket));
+            socket.on('disconnect', () => SocketConnection.sockets.delete(SocketConnection.getSessionCookie(socket)));
         });
     }
-    static get(userID) {
-        return SocketConnection.sockets.get(userID);
+    static get(sessionID) {
+        return SocketConnection.sockets.get(sessionID);
     }
     static getSessionCookie(socket) {
         var _a;
