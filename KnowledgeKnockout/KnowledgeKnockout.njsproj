@@ -72,6 +72,7 @@ SESSIONID=sid</Environment>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mysql\" />
+    <Folder Include="avatars\" />
     <Folder Include="public\HMTL_CSS\" />
     <Folder Include="public\HMTL_CSS\css\" />
     <Folder Include="public\HMTL_CSS\html\" />
@@ -85,6 +86,15 @@ SESSIONID=sid</Environment>
     <Folder Include="routes\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="avatars\Avatars.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="avatars\Monster.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="avatars\TopicBlock.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="chat_example.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
