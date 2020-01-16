@@ -50,15 +50,10 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
-    <Content Include="public\HMTL_CSS\css\loginStyle.css" />
-    <Content Include="public\HMTL_CSS\css\mainStyle.css" />
-    <Content Include="public\HMTL_CSS\css\quizStyle.css" />
-    <Content Include="public\HMTL_CSS\css\uebungStyle.css" />
     <Content Include="views\login.html" />
     <Content Include="views\mainpage.html" />
-    <Content Include="public\HMTL_CSS\html\quiz.html" />
+    <Content Include="views\monster.html" />
     <Content Include="views\registration.html" />
-    <Content Include="public\HMTL_CSS\html\uebung.html" />
     <Content Include="public\js\add_question.js">
       <SubType>Code</SubType>
     </Content>
@@ -82,9 +77,6 @@
   <ItemGroup>
     <Folder Include="Fight\" />
     <Folder Include="mysql\" />
-    <Folder Include="public\HMTL_CSS\" />
-    <Folder Include="public\HMTL_CSS\css\" />
-    <Folder Include="public\HMTL_CSS\html\" />
     <Folder Include="user\" />
     <Folder Include="public\js\" />
     <Folder Include="public\js\modules\" />
@@ -115,6 +107,9 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="routes\add_question_route.ts" />
     <TypeScriptCompile Include="routes\any_route.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="routes\monster_route.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="routes\userinfo_route.ts">
