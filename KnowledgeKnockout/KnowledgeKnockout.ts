@@ -73,7 +73,7 @@ app.get('/match', Authentication.loginCheck, match_route_get).post('/match', Aut
 
 app.post('/userinfo', Authentication.loginCheck, userinfo_route_post);
 
-app.get('/monster', monster_route_get);
+app.get('/monster', Authentication.loginCheck, monster_route_get);
 
 app.get('*', any_route_get);
 
