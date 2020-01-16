@@ -4,26 +4,26 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 
-    <p id="q"></p>
     <script>
-        window.socket = io('/');
+        window.addEventListener('load', () => {
+            window.socket = io('/');
 
-        socket.on('avatarInfo', msg => {
-            console.log(msg);
+            socket.on('avatarInfo', msg => {
+                console.log(msg);
+            });
+
+            socket.on('question', msg => {
+                console.log(msg);
+            });
+
+            socket.on('roundResult', msg => {
+                console.log(msg);
+            });
+
+            socket.on('matchend', msg => {
+                console.log(msg);
+            });
         });
-
-        socket.on('question', msg => {
-            console.log(msg);
-        });
-
-        socket.on('roundResult', msg => {
-            console.log(msg);
-        });
-
-        socket.on('matchend', msg => {
-            console.log(msg);
-        });
-
     </script>
 
 </body>
