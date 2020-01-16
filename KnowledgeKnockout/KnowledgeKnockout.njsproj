@@ -32,6 +32,26 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="public\img\Arena.png" />
+    <Content Include="public\img\bg_test.png" />
+    <Content Include="public\img\EarthMole_left.gif" />
+    <Content Include="public\img\EarthMole_right.gif" />
+    <Content Include="public\img\FireLizard_left.gif" />
+    <Content Include="public\img\FireLizard_right.gif" />
+    <Content Include="public\img\FlightBird_left.gif" />
+    <Content Include="public\img\FlightBird_right.gif" />
+    <Content Include="public\img\LightUnicorn_left.gif" />
+    <Content Include="public\img\LightUnicorn_right.gif" />
+    <Content Include="public\img\MetalDog_left.gif" />
+    <Content Include="public\img\MetalDog_right.gif" />
+    <Content Include="public\img\PlantPanda_left.gif" />
+    <Content Include="public\img\PlantPanda_right.gif" />
+    <Content Include="public\img\PoisonSnake_left.gif" />
+    <Content Include="public\img\PoisonSnake_right.gif" />
+    <Content Include="public\img\ShadowFox_left.gif" />
+    <Content Include="public\img\ShadowFox_right.gif" />
+    <Content Include="public\img\WaterWhale_left.gif" />
+    <Content Include="public\img\WaterWhale_right.gif" />
     <Content Include="public\searchMatch.html">
       <SubType>Code</SubType>
     </Content>
@@ -77,6 +97,7 @@
   <ItemGroup>
     <Folder Include="Fight\" />
     <Folder Include="mysql\" />
+    <Folder Include="public\img\" />
     <Folder Include="user\" />
     <Folder Include="public\js\" />
     <Folder Include="public\js\modules\" />

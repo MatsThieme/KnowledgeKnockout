@@ -15,14 +15,14 @@ export async function monster_route_get(req: Request, res: Response) {
         bild7: imgSources[6],
         bild8: imgSources[7],
         bild9: imgSources[8],
-        level1: req.session?.user.avatars[0],
-        level2: req.session?.user.avatars[1],
-        level3: req.session?.user.avatars[2],
-        level4: req.session?.user.avatars[3],
-        level5: req.session?.user.avatars[4],
-        level6: req.session?.user.avatars[5],
-        level7: req.session?.user.avatars[6],
-        level8: req.session?.user.avatars[7],
-        level9: req.session?.user.avatars[8]
+        level1: JSON.stringify(req.session?.user.avatars[0]),
+        level2: JSON.stringify(req.session?.user.avatars[1]),
+        level3: JSON.stringify(req.session?.user.avatars[2]),
+        level4: JSON.stringify(req.session?.user.avatars[3]),
+        level5: JSON.stringify(req.session?.user.avatars[4]),
+        level6: JSON.stringify(req.session?.user.avatars[5]),
+        level7: JSON.stringify(req.session?.user.avatars[6]),
+        level8: JSON.stringify(req.session?.user.avatars[7]),
+        level9: JSON.stringify(req.session?.user.avatars[8])
     }));
 }
