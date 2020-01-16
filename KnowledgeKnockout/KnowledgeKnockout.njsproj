@@ -57,6 +57,7 @@
     <Content Include="views\login.html" />
     <Content Include="views\mainpage.html" />
     <Content Include="public\HMTL_CSS\html\quiz.html" />
+    <Content Include="views\Monster.html" />
     <Content Include="views\registration.html" />
     <Content Include="public\HMTL_CSS\html\uebung.html" />
     <Content Include="public\js\add_question.js">
