@@ -57,7 +57,7 @@
     <Content Include="views\login.html" />
     <Content Include="views\mainpage.html" />
     <Content Include="public\HMTL_CSS\html\quiz.html" />
-    <Content Include="views\Monster.html" />
+    <Content Include="views\monster.html" />
     <Content Include="views\registration.html" />
     <Content Include="public\HMTL_CSS\html\uebung.html" />
     <Content Include="public\js\add_question.js">
@@ -116,6 +116,9 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="routes\add_question_route.ts" />
     <TypeScriptCompile Include="routes\any_route.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="routes\monster_route.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="routes\userinfo_route.ts">
