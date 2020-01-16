@@ -5,6 +5,7 @@ import { render } from '../views/render';
 export async function monster_route_get(req: Request, res: Response) {
     const imgSources: string[] = (await MySQL.query('SELECT avatarImg FROM topic ORDER BY id')).map((q: any) => q.avatarImg);
     res.send(await render(['monster'], {
+        title: 'monsters',
         bild1: imgSources[0],
         bild2: imgSources[1],
         bild3: imgSources[2],
